@@ -1,0 +1,10 @@
+class Candidate < ActiveRecord::Base
+  has_many :notes
+
+  mount_uploader :resume, ResumeUploader
+
+ # accepts_nested_attributes_for :notes, :reject_if => {proc |attributes| attributes[text].blank?} 
+
+  validates :firstname, :lastname, :email, :presence => true
+  validates :email, :uniqueness => true
+end

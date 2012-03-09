@@ -1,0 +1,36 @@
+<h1>List of Candidates</h1>
+<%= paginate candidates %>
+<table>
+<tr>
+
+<th>Name</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Twitter</th>
+<th>Github</th>
+<th>Local</th>
+<th>Willing To Relocate</th>
+<th>Added On</th>
+<th>Status</th>
+<th>Resume</th>
+</tr>
+
+<% candidates.each do |c|%></td>
+<tr>
+<td><%= [c.lastname,c.firstname].join(' ') %></td> 
+<td><%= c.phone %></td>
+<td><%= c.email %></td>
+<td><%= c.twitter %></td>
+<td><%= c.github %></td>
+<td><%= c.local ? 'Yes' : 'No'%></td>
+<td><%= c.willing_to_relocate ? "Yes" : "No" %></td>
+<td><%= c.added_on %></td>
+<td><%= c.status %></td>
+<td><%= link_to "Click here to see the resume", c.resume.url%></td>
+<td><%= link_to 'Show', c %></td>
+<td><%= link_to 'Edit', edit_candidate_path(c) %></td>
+</tr>
+<% end %>
+</table>
+<br />
+<%= link_to 'New Candidate', new_candidate_path %>

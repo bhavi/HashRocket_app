@@ -1,0 +1,52 @@
+<%= form_for (candidate), :html => {:multipart => true}  do |f| %>
+
+  <% if candidate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(candidate.errors.count, "error") %> prohibited this Candidate from being saved:</h2>
+
+      <ul>
+      <% candidate.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div><%= f.label :firstname %><br />
+  <%= f.text_field :firstname %></div>
+
+  <div><%= f.label :lastname %><br />
+  <%= f.text_field :lastname %></div>
+
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email %></div>
+
+  <div><%= f.label :phone %><br />
+  <%= f.telephone_field :phone %></div>
+
+  <div><%= f.label :github %><br />
+  <%= f.email_field :github %></div>
+
+  <div><%= f.label :twitter %><br />
+  <%= f.email_field :twitter %></div>
+
+  <div><%= f.label :local %><br />
+  <%= f.check_box :local %></div>
+
+  <div><%= f.label :willing_to_relocate %><br />
+  <%= f.radio_button :willing_to_relocate, true %>Yes
+  <%= f.radio_button :willing_to_relocate, false %>No</div>
+
+  <div><%= f.label :added_on %><br />
+  <%= f.date_select :added_on %></div>
+
+  <div><%= f.label :status %><br />
+  <%= f.select "status", options_for_select(["Pending" ,"Rejected", "Hired"]) %></div>
+
+  <div><%= f.label :resume %><br />
+    <%= f.file_field :resume %> </div>
+
+
+  <br />
+
+  <div><%= f.submit %></div>
+<% end %>
