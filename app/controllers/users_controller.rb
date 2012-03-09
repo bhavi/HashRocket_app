@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 before_filter :authenticate_user!
 expose(:user)
-expose(:users) {User.all}
+expose(:users) {User.all.page(params[:page]).per(1)}
 
 def index
     end

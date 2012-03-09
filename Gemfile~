@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
-gem 'sqlite3'
 gem 'cucumber-rails', :group =>:test
 gem 'database_cleaner',:group => :test
 gem 'rspec-rails', :group => [:development, :test]
@@ -10,6 +9,9 @@ gem 'devise'
 gem 'factory_girl_rails', :group =>:test
 gem 'decent_exposure'
 
+group :development do
+  gem 'sqlite3'
+end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

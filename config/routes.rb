@@ -5,5 +5,7 @@ end
 
   root :to => "pages#index"
   resources :users
- 
+  resources :candidates do
+    resources :notes
+  end
 end
