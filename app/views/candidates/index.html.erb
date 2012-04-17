@@ -1,4 +1,7 @@
-<h1>List of Candidates</h1>
+<h1>List of Candidates</h1> 
+
+<%# <b>Filter by Status: </b><%= collection_select("status","candidate_id", candidates,:status) %1> %>
+
 <%= paginate candidates %>
 <table>
 <tr>

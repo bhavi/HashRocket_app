@@ -7,5 +7,8 @@ end
   resources :users
   resources :candidates do
     resources :notes
+    resources :skills
   end
+  resources :skills
+
 end

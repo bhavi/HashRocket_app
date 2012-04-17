@@ -1,10 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
-gem 'cucumber-rails', :group =>:test
-gem 'database_cleaner',:group => :test
-gem 'rspec-rails', :group => [:development, :test]
-gem 'capybara', :group => :test
 gem 'devise'
 gem 'factory_girl_rails', :group =>:test
 gem 'decent_exposure'
@@ -13,6 +9,13 @@ gem 'kaminari'
 
 group :development do
   gem 'sqlite3'
+end
+
+group :test do
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'rspec-rails'
+  gem 'capybara'
 end
 
 group :assets do

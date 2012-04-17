@@ -1,17 +1,20 @@
-<p>Index<p>
 <h1> Listing Users </h1>
+<%= paginate users %>
+
 <table>
   <tr>
     <th>Name</th>
     <th>Email</th>
+    <th>Image</th>
   </tr>
 
-</table>
+
 
 <% users.each do |user| %>
     <tr>
     <td><%= user.name %></td>
     <td><%= user.email %></td>
+    <td><%= link_to "Click image", user.image_url%></td>
     <td><%= link_to "Show", user_path(user) %></td>
     <td><%= link_to "Edit", edit_user_path(user) %></td>
     <td><%= link_to "Destroy", user_path(user), :confirm => "Are you sure?", :method => :delete %></td>
@@ -22,7 +25,7 @@
 </table> 
 
 <br />
-
+<%= link_to "Skills" , skills_path %>
 
 
 
