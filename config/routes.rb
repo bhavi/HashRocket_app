@@ -3,7 +3,7 @@ HashrocketProj::Application.routes.draw do
   get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
 end
 
-  root :to => "pages#index"
+  root :to => "users#index"
   resources :users
   resources :candidates do
     resources :notes
