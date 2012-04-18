@@ -2,14 +2,29 @@
 <html>
 <head>
   <title>HashrocketProj</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "global", :media => "all" %>
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" %>
-    <%= csrf_meta_tags %>
+  <%= javascript_include_tag 'rails' %>
+  <%= csrf_meta_tags %>
 </head>
 <body>
-  <ul class="hmenu">
+  <ul>
     <%= render 'users/navigation' %>
   </ul>
+<div id="dolphincontainer">
+  <div id="dolphinnav">
+    <ul>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Training Offered</a></li>
+      <li><a href="">Tutorials</a></li>
+      <li><%= link_to "Candidates",candidates_path %></a></li>
+      <li><%= link_to "Skills",skills_path %></a></li>
+      <li><a href="">Contact Us</a></li>
+      
+    </ul>
+  </div>
+</div>
+
 
 <%- flash.each do |name, msg| -%>
     <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>

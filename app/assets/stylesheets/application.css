@@ -3,9 +3,7 @@ ul.hmenu {
   margin: 0 0 2em;
   padding: 0;
 }
-ul.hmenu li {
-  display: inline;  
-}
+
 #flash_notice, #flash_alert {
   padding: 5px 8px;
   margin: 10px 0;
@@ -18,3 +16,4 @@ ul.hmenu li {
   background-color: #FCC;
   border: solid 1px #C66;
 }
+

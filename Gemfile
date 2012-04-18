@@ -5,8 +5,7 @@ gem 'devise'
 gem 'factory_girl_rails', :group =>:test
 gem 'decent_exposure'
 gem 'carrierwave'
-gem 'kaminari'
-
+gem 'kaminari' 
 group :development do
   gem 'sqlite3'
 end
