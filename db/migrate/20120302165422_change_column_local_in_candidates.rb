@@ -1,6 +1,6 @@
 class ChangeColumnLocalInCandidates < ActiveRecord::Migration
   def up
-    change_column(:candidates, :local, :boolean)
+    change_column(:candidates, :local, :bool)
   end
 
   def down
