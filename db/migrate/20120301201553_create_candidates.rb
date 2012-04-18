@@ -7,7 +7,7 @@ class CreateCandidates < ActiveRecord::Migration
       t.string :email
       t.string :github
       t.string :twitter
-      t.string :local
+      t.boolean :local
       t.boolean :willing_to_relocate
       t.date :added_on
       t.string :status

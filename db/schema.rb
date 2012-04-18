@@ -25,12 +25,12 @@ ActiveRecord::Schema.define(:version => 20120330160725) do
     t.string   "email"
     t.string   "github"
     t.string   "twitter"
-    t.boolean  "local",               :limit => 255
+    t.boolean  "local"
     t.boolean  "willing_to_relocate"
     t.date     "added_on"
     t.string   "status"
-    t.datetime "created_at",                         :null => false
-    t.datetime "updated_at",                         :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.string   "resume"
   end
 
