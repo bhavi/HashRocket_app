@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120330160725) do
+ActiveRecord::Schema.define(:version => 20120424144803) do
 
   create_table "candidate_skills", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -34,6 +34,15 @@ ActiveRecord::Schema.define(:version => 20120330160725) do
     t.string   "resume"
   end
 
+  create_table "contact_us", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone_no"
+    t.string   "message"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "notes", :force => true do |t|
     t.string   "text"
     t.date     "date"
@@ -44,8 +53,24 @@ ActiveRecord::Schema.define(:version => 20120330160725) do
 
   add_index "notes", ["candidate_id"], :name => "index_notes_on_candidate_id"
 
+  create_table "simple_captcha_data", :force => true do |t|
+    t.string   "key",        :limit => 40
+    t.string   "value",      :limit => 6
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+  end
+
+  add_index "simple_captcha_data", ["key"], :name => "idx_key"
+
   create_table "skills", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "subscription_plans", :force => true do |t|
+    t.string   "name"
+    t.float    "price"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
