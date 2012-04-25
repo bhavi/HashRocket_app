@@ -1,0 +1,60 @@
+#subscriptions
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width: 99%;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+   border:1px solid #303030; 
+}
+th 
+{
+text-align:left;
+font-size:1em;
+border:1px solid #303030 ;
+padding:3px 2px 2px 2px;
+}
+.cols 
+{
+font-size:1.1em;
+text-align:left;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#A0A0A0;
+color:#ffffff;
+border:1px solid #303030;
+}
+.rows
+{
+color:#000000;
+background-color:#C0C0C0;
+}
+#compare
+{
+text-decoration: none;
+font-size:1.1em;
+}
+
+fieldset
+{
+   width: 98%;
+   padding: 5px 2px;
+   display:block;
+   float: left;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+   border:1px solid #303030; 
+}
+
+legend
+{
+   font-family : Arial, sans-serif;
+   font-size: 1.3em;
+   font-weight:bold;
+   color:#333;
+   display: block;
+  -webkit-padding-start: 2px;
+  -webkit-padding-end: 2px;
+   border: none;
+}
+
+

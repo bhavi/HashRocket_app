@@ -1,0 +1,38 @@
+
+fieldset
+{
+   width: 35%;
+   padding: 5px;
+   display:block;
+   float: left;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+   border: 1px solid green;   
+}
+
+legend
+{
+   font-family : Arial, sans-serif;
+   font-size: 1.3em;
+   font-weight:bold;
+   color:#333;
+   display: block;
+  -webkit-padding-start: 2px;
+  -webkit-padding-end: 2px;
+   border: none;
+}
+
+.container
+{
+   margin-top:8px;
+   margin-bottom: 10px;
+}
+
+.short_explanation
+{
+   font-family : Arial, sans-serif;
+   font-size: 0.6em;
+   color:#333;   
+}
+
+
