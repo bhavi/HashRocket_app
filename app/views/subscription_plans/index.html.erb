@@ -4,17 +4,17 @@
     <th>Plan<b> <a id="compare" href ="">(compare plans)</a></b></th>
     <th>Price (USD)</th>
 
-  </tr>      
+  </tr>
   <% @plans.each do |plan| %>
    <tr class = "rows">
      <td class= "cols"><%= plan.name %></td>
-     <td class= "cols">$<%= plan.price %></td> 
+     <td class= "cols">$<%= plan.price %></td>
    </tr>
  <% end %>
 </table>
 
 <br />
-
+<%= link_to "New Plan", new_subscription_plan_path %>
 <br />
 <%= field_set_tag 'Account Information' do %>
   <p><%= label_tag 'first name' %>

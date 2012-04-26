@@ -10,5 +10,9 @@ end
     resources :skills
   end
   resources :skills
+  resources :contact_us, :except => [:index, :show, :destroy]
+  match 'contact_us/', :to=> 'contact_us#new'
+  resources :subscription_plans
+
 
 end
