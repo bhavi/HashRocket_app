@@ -1,5 +1,5 @@
 class ContactUsController < ApplicationController
-
+before_filter :authenticate_user!
   def new
    @contact_us = ContactUs.new
    render 'new'

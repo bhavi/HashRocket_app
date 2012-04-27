@@ -3,7 +3,7 @@ before_filter :authenticate_user!
 expose(:user)
 expose(:users) {User.page(params[:page]).per(5)}
 
-def index
+    def index
     end
 
     def new
