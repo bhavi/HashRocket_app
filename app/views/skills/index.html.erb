@@ -5,7 +5,7 @@
     <th> Name </th>
   </tr>
 
-  <% skills.each do |s| %>
+  <% @skills.each do |s| %>
   <tr>
     <td><%= s.name %></td>
     <td> <%= link_to "Show", skill_path(s) %> </td>
