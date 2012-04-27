@@ -32,9 +32,12 @@
   <div><%= f.label :local %><br />
   <%= f.check_box :local %></div>
 
-  <div><%= f.label :willing_to_relocate %><br />
-  <%= f.radio_button :willing_to_relocate, true %>Yes
-  <%= f.radio_button :willing_to_relocate, false %>No</div>
+  <div>
+    Willing to relocate?<br />
+  <%= f.radio_button :willing_to_relocate, true, id: 'willing_to_relocate_yes' %>
+  <%= label_tag 'willing_to_relocate_yes', 'Yes' %>
+  <%= f.radio_button :willing_to_relocate, false , id: 'willing_to_relocate_no' %>
+  <%= label_tag 'willing_to_relocate_no', 'No' %></div>
 
   <div><%= f.label :added_on %><br />
   <%= f.date_select :added_on %></div>
