@@ -27,6 +27,7 @@ border: 1px solid #303030;
 {
 color: #000000;
 background-color: #C0C0C0;
+
 }
 #compare
 {
@@ -42,7 +43,7 @@ fieldset
    float: left;
   -webkit-border-radius: 10px;
   -khtml-border-radius: 10px;
-   border: 1px solid #303030; 
+   border: 1px solid #303030;
 }
 legend
 {
