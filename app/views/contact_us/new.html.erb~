@@ -1,7 +1,0 @@
-<h1>Contact Us Form</h1>
-
-
-<%= render 'form', action_path: contact_us_path %>
-
-
-
