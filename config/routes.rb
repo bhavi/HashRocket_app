@@ -1,7 +1,5 @@
 HashrocketProj::Application.routes.draw do
-  get "user_subscription/index"
-
-  devise_for :users do
+    devise_for :users do
   get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
 end
 
@@ -17,12 +15,13 @@ end
 
   # resources :subscription_plans
 
-  resources :user_subscription, only: [:index] do
-    collection do
-      post :subscribe
+  resources :user_subscriptions do
+   collection do
+    post 'subscribe'
     end
   end
 
-  # resources :billing_info, :except => [:index ]
+
+resources :billing_info
 
 end
