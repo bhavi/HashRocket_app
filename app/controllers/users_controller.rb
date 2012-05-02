@@ -8,6 +8,7 @@ expose(:users) {User.page(params[:page]).per(5)}
     end
 
     def new
+       user.build_billinginfo
     end
 
     def create

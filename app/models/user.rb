@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
-  has_one :address
+  has_one :billing_info
   belongs_to :subscription_plan
+
   mount_uploader :image, ImageUploader
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encrypdtable, :confirmable, :lockable, :timeoutable and :omniauthable
@@ -8,9 +9,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :firstname,:lastname,:username, :email, :password, :password_confirmation, :remember_me, :subscription_plan_id
+  attr_accessible :firstname,:lastname,:username, :email, :password, :password_confirmation, :remember_me, :subscription_plan_id, :billing_info_attributes
 
   validates :username, :email, :presence => true
   validates :email, :uniqueness => true
- 
+
 end

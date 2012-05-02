@@ -22,6 +22,6 @@ end
   end
 
 
-resources :billing_info
+resources :billing_infos
 
 end

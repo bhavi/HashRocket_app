@@ -6,7 +6,7 @@ before_filter :authenticate_user!
 
   def subscribe
     if current_user.update_attributes(params[:user])
-      redirect_to user_subscription_path, notice: 'Successfully created a plan'
+      redirect_to billing_infos_path, notice: 'Successfully created a plan'
     else
       render :index, alert: 'Error updating the user'
     end

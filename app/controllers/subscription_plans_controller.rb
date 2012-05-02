@@ -33,4 +33,6 @@ class SubscriptionPlansController < ApplicationController
      render 'edit'
     end
   end
-end
+
+  end
+
