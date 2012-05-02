@@ -1,0 +1,20 @@
+<h1>Billing Information </h1>
+
+<table>
+  <tr>
+     <th>Plan</th>
+     <th>Price(USD)</th>
+   </tr>
+   <tr>
+     <% @plan.each do |plan| %>
+     <td><%= plan.name %></td>
+     <td><%= plan.price %></td>
+   <% end %>
+    </tr>
+ </table>
+ <br />
+<%= render 'form' %>
+
+
+
+

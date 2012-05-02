@@ -1,0 +1,48 @@
+<%= field_set_tag "Billing Information" do %>
+<%= form_for (@billing_info) do |billing| %>
+
+ <div><%= billing.label :firstname %>
+  <%= billing.text_field :firstname %></div>
+
+  <div><%= billing.label :lastname %>
+  <%= billing.text_field :lastname %></div>
+
+  <div><%= billing.label :email %>
+  <%= billing.text_field :email %></div>
+
+  <div><%= billing.label :company %>
+  <%= billing.text_field :company %></div>
+
+  <div><%= billing.label :address1 %>
+  <%= billing.text_field :address1 %></div>
+
+  <div><%= billing.label :address2 %>
+  <%= billing.text_field :address2 %></div>
+
+  <div><%= billing.label :apt %>
+  <%= billing.text_field :apt %></div>
+
+  <div><%= billing.label :cityname %>
+  <%= billing.text_field :cityname %></div>
+
+  <div><%= billing.label :zipcode %>
+  <%= billing.text_field :zipcode %></div>
+
+  <div><%= billing.label  :phone %>
+  <%= billing.phone_field :phone %></div>
+
+  <div><%= billing.label  :alternate_phone %>
+  <%= billing.phone_field :alternate_phone %></div>
+
+  <%# <div><%= billing.label :state %1> %>
+  <%# <%= billing.select "state", options_for_select(["Pending" ,"Rejected", "Hired"]) %1></div> %>
+
+  <div><%= billing.submit  "Submit" %></div>
+
+<% end %>
+
+<% end %>
+
+
+
+
