@@ -7,8 +7,10 @@ gem 'decent_exposure'
 gem 'carrierwave'
 gem 'kaminari'
 gem 'ruby-debug19', require: 'ruby-debug', platform: 'ruby_19'
-gem 'activemerchant'
+
+gem 'timecop'
 group :development do
+  gem 'pry-rails'
   gem 'sqlite3'
 end
 
@@ -41,5 +43,4 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+

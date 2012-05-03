@@ -1,10 +1,10 @@
 <h2>Subscription Plans</h2>
 <table id="subscriptions">
   <tr class = "rows">
-    <th>Plan<b> <a id="compare" href ="">(compare plans)</a></b></th>
-    <th>Price (USD)</th>
-
-  </tr class = "rows" >
+    <th class ="head">Plan<b> <a id="compare" href ="">(compare plans)</a></b></th>
+    <th class = "head">Price (USD)</th>
+  </tr>
+  <tr class = "rows" >
   <% @plans.each do |plan| %>
    <tr class = "rows">
      <td class= "cols"><%= plan.name %></td>

@@ -1,14 +1,13 @@
 class TutorialsController < ApplicationController
 before_filter :authenticate_user! , :only =>:index
-  def index
-       @tutorials = Tutorial.all
-  end
 
-def index
-    @tutorials = Tutorial.find(:all)
-      respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @tutorials }
+
+  def index
+       @categories = Category.all
+      @tutorials = Tutorial.order(:created_at)
+       respond_to do |format|
+         format.html # index.html.erb
+         format.xml  { render :xml => @tutorials }
       end
   end
 

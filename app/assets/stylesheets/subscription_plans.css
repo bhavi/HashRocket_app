@@ -6,11 +6,11 @@
   -khtml-border-radius: 10px;
    border:1px solid #303030; 
 }
-th
+#head
 {
 text-align: left;
 font-size: 1em;
-border: 1px solid #303030 ;
+border: 1px solid #303030;
 padding: 3px 2px 2px 2px;
 }
 .cols
@@ -27,7 +27,6 @@ border: 1px solid #303030;
 {
 color: #000000;
 background-color: #C0C0C0;
-
 }
 #compare
 {

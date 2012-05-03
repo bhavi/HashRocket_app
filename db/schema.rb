@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120502183951) do
+ActiveRecord::Schema.define(:version => 20120503145238) do
 
   create_table "address_types", :force => true do |t|
     t.string   "name"
@@ -77,6 +77,13 @@ ActiveRecord::Schema.define(:version => 20120502183951) do
     t.string   "resume"
   end
 
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.integer  "count"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "contact_us", :force => true do |t|
     t.string   "name"
     t.string   "email"
@@ -125,6 +132,7 @@ ActiveRecord::Schema.define(:version => 20120502183951) do
     t.string   "url"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.integer  "category_id"
   end
 
   create_table "users", :force => true do |t|
