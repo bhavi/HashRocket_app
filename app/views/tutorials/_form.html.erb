@@ -1,0 +1,36 @@
+
+<%= form_for @tutorial do |s| %>
+
+  <% if @tutorial.errors.any? %>
+    <div id="error_explanlation">
+      <h2><%= pluralize(@tutorial.errors.count, "error") %> prohibited this Tutorial from being saved:</h2>
+
+      <ul>
+      <% @tutorial.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div>
+  <%= s.label :title %><br />
+  <%= s.text_field :title %>
+</div>
+<div>
+  <%= s.label :duration %><br />
+  <%= s.time_select :duration,:include_seconds => true %>
+</div>
+<div>
+  <%= s.label :release_date %><br />
+  <%= s.date_select :release_date %>
+</div>
+<div>
+  <%= s.label :url %><br />
+  <%= s.text_field :url %>
+</div>
+
+<div class= "actions">
+  <%= s.submit %>
+</div>
+<% end %>
