@@ -3,7 +3,7 @@
 
   <% if @skill.errors.any? %>
     <div id="error_explanlation">
-      <h2><%= pluralize(@skill.errors.count, "error") %> prohibited this Candidate from being saved:</h2>
+      <h2><%= pluralize(@skill.errors.count, "error") %> prohibited this Skill from being saved:</h2>
 
       <ul>
       <% @skill.errors.full_messages.each do |msg| %>

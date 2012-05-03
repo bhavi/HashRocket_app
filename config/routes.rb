@@ -23,5 +23,5 @@ end
 
 
 resources :billing_infos
-
+resources :tutorials
 end
