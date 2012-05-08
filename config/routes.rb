@@ -14,7 +14,7 @@ end
   match 'contact_us/', :to=> 'contact_us#new'
 
   # resources :subscription_plans
-
+  resources :tutorials
   resources :user_subscriptions do
    collection do
     post 'subscribe'
@@ -23,5 +23,5 @@ end
 
 
 resources :billing_infos
-resources :tutorials
+resources :payments
 end
