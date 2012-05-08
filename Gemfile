@@ -7,8 +7,8 @@ gem 'decent_exposure'
 gem 'carrierwave'
 gem 'kaminari'
 gem 'ruby-debug19', require: 'ruby-debug', platform: 'ruby_19'
-
 gem 'timecop'
+gem 'stripe'
 group :development do
   gem 'pry-rails'
   gem 'sqlite3'
