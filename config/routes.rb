@@ -15,6 +15,7 @@ end
 
   # resources :subscription_plans
   resources :tutorials
+  resources :categories
   resources :user_subscriptions do
    collection do
     post 'subscribe'
