@@ -3,6 +3,9 @@
 <table>
   <tr>
     <th> Name </th>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
 
   <% @skills.each do |s| %>
@@ -10,7 +13,7 @@
     <td><%= s.name %></td>
     <td> <%= link_to "Show", skill_path(s) %> </td>
     <td> <%= link_to "Edit", edit_skill_path(s) %> </td>
-    <td> <%= link_to "Destroy",skill_path(s), :confirm => "r u sure", :method=> :delete %>
+    <td> <%= link_to "Destroy",skill_path(s), :confirm => "r u sure", :method=> :delete %> </td>
   </tr>
 <% end %>
 </table>

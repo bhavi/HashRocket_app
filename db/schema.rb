@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120503145238) do
+ActiveRecord::Schema.define(:version => 20120509182026) do
 
   create_table "address_types", :force => true do |t|
     t.string   "name"
@@ -79,9 +79,9 @@ ActiveRecord::Schema.define(:version => 20120503145238) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
-    t.integer  "count"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "tutorials_count"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "contact_us", :force => true do |t|
@@ -103,14 +103,13 @@ ActiveRecord::Schema.define(:version => 20120503145238) do
 
   add_index "notes", ["candidate_id"], :name => "index_notes_on_candidate_id"
 
-  create_table "simple_captcha_data", :force => true do |t|
-    t.string   "key",        :limit => 40
-    t.string   "value",      :limit => 6
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+  create_table "payments", :force => true do |t|
+    t.string   "stripe_customer_token"
+    t.string   "email"
+    t.integer  "billing_info_id"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
-
-  add_index "simple_captcha_data", ["key"], :name => "idx_key"
 
   create_table "skills", :force => true do |t|
     t.string   "name"

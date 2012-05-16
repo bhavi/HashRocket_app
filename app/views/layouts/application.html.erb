@@ -4,7 +4,7 @@
   <title>HashrocketProj</title>
   <%= stylesheet_link_tag    "application.css", :media => "all" %>
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" %>
-  <%= javascript_include_tag "application.js" %>
+  <%= javascript_include_tag "https://js.stripe.com/v1/","application.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -15,7 +15,7 @@
   <div id="dolphinnav">
     <ul>
       <li><%= link_to "About Us", root_path %></li>
-      <li><%= link_to "Tutorials Offered", tutorials_path %></li>
+      <li><%= link_to "Tutorials Offered", categories_path %></li>
       <li><%= link_to "Candidates",candidates_path %></a></li>
       <li><%= link_to "Skills",skills_path %></a></li>
       <li><%= link_to "Contact Us", contact_us_path %></li>

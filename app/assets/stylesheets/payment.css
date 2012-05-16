@@ -1,16 +1,25 @@
-#subscriptions
+#payments
 {
-   width: 99%;
+   width: 60%;
   -webkit-border-radius: 10px;
   -khtml-border-radius: 10px;
    border:1px solid #303030; 
 }
-#head
+#head1
 {
 text-align: left;
 font-size: 1em;
 border: 1px solid #303030;
 padding: 3px 2px 2px 2px;
+width: 50%
+}
+#head2
+{
+text-align: left;
+font-size: 1em;
+border: 1px solid #303030;
+padding: 3px 2px 2px 2px;
+width: 10%
 }
 .cols
 {
@@ -34,3 +43,7 @@ font-size: 1.1em;
 }
 
 
+
+// Place all the styles related to the Payments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/

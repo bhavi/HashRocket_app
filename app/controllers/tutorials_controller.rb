@@ -3,7 +3,6 @@ before_filter :authenticate_user! , :only =>:index
 
 
   def index
-       @categories = Category.all
       @tutorials = Tutorial.order(:created_at)
        respond_to do |format|
          format.html # index.html.erb
@@ -12,7 +11,7 @@ before_filter :authenticate_user! , :only =>:index
   end
 
   def new
-    @tutorial = Tutorial.new(params[:tutorial])
+     @tutorial = Tutorial.new(params[:tutorial])
       respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @tutorial }

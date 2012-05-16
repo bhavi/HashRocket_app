@@ -1,0 +1,44 @@
+
+#wrapper{
+  margin:0 auto;
+  padding:15px 15%;
+  text-align:left
+}
+#content {
+  max-width:70em;
+  width:100%;
+  margin:0 auto;
+  padding-bottom:20px;
+  overflow:hidden
+}
+.demo {
+  margin:0;
+  padding:1.5em 1.5em 0.75em;
+  border:1px solid #ccc;
+  position:relative;
+  overflow:hidden
+}
+.collapse p {padding:0 10px 1em}
+.top{font-size:.9em; text-align:right}
+#switch, .switch {margin-bottom:5px; text-align:right}
+.expand{padding-bottom:.75em}
+
+
+}
+.expand a {
+  display:block;
+  padding:3px 10px
+}
+.expand a:link, .expand a:visited {
+  border-width:1px;
+  background-image:url(img/arrow-down.gif);
+  background-repeat:no-repeat;
+  background-position:98% 50%;
+}
+.expand a:hover, .expand a:active, .expand a:focus {
+  text-decoration:underline
+}
+.expand a.open:link, .expand a.open:visited {
+  border-style:solid;
+  background:#eee url(img/arrow-up.gif) no-repeat 98% 50%
+}

@@ -12,11 +12,14 @@
       </ul>
     </div>
   <% end %>
-
 <div>
-  <%= s.label :title %><br />
+  <%= s.label :title %>
   <%= s.text_field :title %>
 </div>
+<div>
+ <%= s.label :Category %><br />
+ <%= select("tutorial", :category_id, Category.all.collect {|c| [ c.name, c.id ] }, {:include_blank => 'Belongs to Category'}) %>
+ </div>
 <div>
   <%= s.label :duration %><br />
   <%= s.time_select :duration,:include_seconds => true %>

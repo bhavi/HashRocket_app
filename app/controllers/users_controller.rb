@@ -4,7 +4,6 @@ expose(:user)
 expose(:users) {User.page(params[:page]).per(5)}
 
     def index
-    
     end
 
     def new

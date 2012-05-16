@@ -74,6 +74,7 @@ GEM
     erubis (2.7.0)
     execjs (1.3.0)
       multi_json (~> 1.0)
+    fabrication (1.4.0)
     factory_girl (2.6.0)
       activesupport (>= 2.3.9)
     factory_girl_rails (1.7.0)
@@ -187,6 +188,8 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.5)
+    stripe (1.6.3)
+      rest-client (~> 1.4)
     term-ansicolor (1.0.7)
     therubyracer (0.9.10)
       libv8 (~> 3.3.10)
@@ -217,6 +220,7 @@ DEPENDENCIES
   database_cleaner
   decent_exposure
   devise
+  fabrication
   factory_girl_rails
   heroku
   jquery-rails
@@ -228,6 +232,7 @@ DEPENDENCIES
   ruby-debug19
   sass-rails (~> 3.2.3)
   sqlite3
+  stripe
   therubyracer
   timecop
   uglifier (>= 1.0.3)

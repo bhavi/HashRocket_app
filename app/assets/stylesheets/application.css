@@ -3,16 +3,5 @@
 *= require_tree .
 */
 
-#flash_notice, #flash_alert {
-  padding: 5px 8px;
-  margin: 10px 0;
-}
-#flash_notice {
-  background-color: #d0e4fe;
-  border: solid 1px #6C6;
-}
-#flash_alert {
-  background-color: #ff0000;
-  border: solid 1px #C66;
-}
+
 

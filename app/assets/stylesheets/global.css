@@ -6,19 +6,23 @@ html {
 	background-size: cover;
 }
 
+/* --- Headings  --- */
 h1 {
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:16px;
-	font-weight:bold;
-	margin:0;
-	padding:10px;
-	}
+  margin-bottom:.75em; 
+  font-family:georgia,'times new roman',times,serif; 
+  font-size:1.5em; 
+  font-weight:bold; 
+}
+h2{font-size:1em}
 
-hr {
-	border:none;
-	height:1px;
-	margin-bottom:25px;
-	}
+#flash_notice {
+  background-color: #d0e4fe;
+  border: solid 1px #6C6;
+}
+#flash_alert {
+  background-color: #ff0000;
+  border: solid 1px #C66;
+}
 
 /* ---------------------- Dolphin nav ---------------------- */
 #dolphincontainer{
@@ -72,5 +76,28 @@ hr {
 	width:auto;
 	cursor:pointer;
 	}
+/*------------------------------------Fieldset----------------------------------*/
+fieldset
+{
+   width: 98%;
+   padding: 5px 2px;
+   display: block;
+   float: left;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+   border: 1px solid #303030;
+}
+legend
+{
+   
+   font-size: 1.3em;
+   font-weight:bold;
+   color: #333;
+   display: block;
+  -webkit-padding-start: 2px;
+  -webkit-padding-end: 2px;
+   border: none;
+}
+
 
 

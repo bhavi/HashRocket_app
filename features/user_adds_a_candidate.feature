@@ -9,7 +9,7 @@ Feature: User creates a candidate
     Given it is currently '2012-02-01'
     And   I fill the candidate form with valid information
     When  I submit the candidate form
-    Then  I see "Candidate was successfully created"
+    Then  I see "Candidate was successfully created."
     And   I am on the candidates page
     And   I see the following table:
       | Name            | Phone       | Email               | Twitter        | Github  | Local | Willing To Relocate | Added On   | Status  | Resume                       |
