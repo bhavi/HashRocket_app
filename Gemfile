@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 gem 'devise'
+gem 'fabrication'
 gem 'factory_girl_rails', :group =>:test
 gem 'decent_exposure'
 gem 'carrierwave'
